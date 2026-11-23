@@ -12,3 +12,8 @@ variable "cpu_threshold" {
   type    = number
   default = 60
 }
+variable "evaluation_periods" {
+  type        = number
+  description = "Consecutive breaching periods before the alarm fires"
+  default     = 2
+}

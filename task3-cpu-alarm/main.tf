@@ -41,7 +41,7 @@ resource "aws_cloudwatch_metric_alarm" "high_cpu" {
   metric_name         = "CPUUtilization"
   statistic           = "Average"
   period              = 60
-  evaluation_periods  = 2
+  evaluation_periods = var.evaluation_periods
   threshold           = var.cpu_threshold
   comparison_operator = "GreaterThanThreshold"
   treat_missing_data  = "notBreaching"
