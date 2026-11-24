@@ -1,4 +1,7 @@
 # AWS_Cloud_Infrastructure_Automation
+[![Terraform CI](https://github.com/<your-username>/terraform-practice/actions/workflows/terraform-ci.yml/badge.svg)](https://github.com/<AruliyaAsokan>/terraform-practice/actions/work
+flows/terraform-ci.yml)
+
 Capstone Project
 Task 01 — EC2 Web Server
   Terraform provisions EC2 + VPC + networking + Bash installs Apache
