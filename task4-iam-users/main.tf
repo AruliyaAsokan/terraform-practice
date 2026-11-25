@@ -5,8 +5,9 @@ resource "aws_iam_user" "readers" {
   path = "/practice/"
 
   tags = {
-    Project   = "iam-automation-practice"
-    ManagedBy = "terraform"
+    Project     = "iam-automation-practice"
+    ManagedBy   = "terraform"
+    Environment = "production"
   }
 }
 resource "aws_iam_policy" "s3_read" {
