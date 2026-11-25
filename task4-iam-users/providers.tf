@@ -10,3 +10,11 @@ terraform {
 provider "aws" {
   region = var.region
 }
+
+terraform {
+  backend "s3" {
+    bucket = "tfstate-practice-590507089733"
+    key    = "task4-iam-users/terraform.tfstate"
+    region = "ap-south-1"
+  }
+}
