@@ -9,7 +9,7 @@ permissions:
 
 jobs:
   apply:
-    name: Apply
+    name: Apply - task4-iam-users
     runs-on: ubuntu-latest
     environment: production
 
@@ -31,11 +31,14 @@ jobs:
           terraform_version: 1.9.8
 
       - name: Initialise
+        working-directory: task4-iam-users
         run: terraform init
 
       - name: Plan
+        working-directory: task4-iam-users
         run: terraform plan -no-color -out=tfplan
 
       - name: Apply
+        working-directory: task4-iam-users
         run: terraform apply -no-color -auto-approve tfplan
 
